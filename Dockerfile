@@ -18,8 +18,8 @@ LABEL maintainer="mateumann@gmail.com" \
 
 COPY services /etc/service
 
-RUN apk --update add --no-cache privoxy runit squid
-RUN chown privoxy -R /etc/service/privoxy.*
+RUN apk --update add --no-cache privoxy runit squid && \
+    chown privoxy -R /etc/service/privoxy.*
 
 EXPOSE 3128
 
