@@ -1,0 +1,2 @@
+#!/bin/sh
+exec chpst -u squid:nogroup squid -f ./squid.conf -sN
