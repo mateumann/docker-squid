@@ -1,6 +1,6 @@
 GIT_COMMIT = $(strip $(shell git rev-parse --short HEAD))
 
-DOCKER_IMAGE ?= mateumann/pproxy
+DOCKER_IMAGE ?= mateumann/squid
 DOCKER_TAG = latest
 
 # Build Docker image
