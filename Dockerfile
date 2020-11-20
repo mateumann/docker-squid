@@ -16,7 +16,7 @@ LABEL maintainer="mateumann@gmail.com" \
     com.microscaling.license="MIT"
 
 RUN apk update && \
-    apk add --no-cache squid=4.12-r0 && \
+    apk add --no-cache squid=4.13-r0 && \
     rm -rf /var/cache/apk/* && \
     chown -R squid:squid /etc/squid/
 
