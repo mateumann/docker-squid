@@ -18,8 +18,7 @@ LABEL maintainer="mateumann@gmail.com" \
 RUN apk update && \
     apk add --no-cache squid=5.0.6-r0 && \
     rm -rf /var/cache/apk/* && \
-    mkdir -v /run/squid && \
-    chown -R squid:squid /etc/squid/ /run/squid
+    chown -R squid:squid /etc/squid/
 
 COPY entrypoint.sh /
 
