@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.0-experimental
-FROM alpine:3.14
+FROM alpine:3.16
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -16,7 +16,7 @@ LABEL maintainer="mateumann@gmail.com" \
     com.microscaling.license="MIT"
 
 RUN apk update && \
-    apk add --no-cache squid=5.0.6-r0 && \
+    apk add --no-cache squid=5.5-r0 && \
     rm -rf /var/cache/apk/* && \
     chown -R squid:squid /etc/squid/
 
